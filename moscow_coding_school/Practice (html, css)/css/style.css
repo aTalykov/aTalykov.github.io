@@ -1,0 +1,47 @@
+@import url('reset.css');
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.page {
+    font-family: Helvetica;
+}
+
+.image {
+    height: 1080px;
+    background-image: url(../img/driko.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header, .footer {
+    background-color:  #414141;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.header-text, .footer-text {
+    height: 200px;
+    line-height: 200px;
+    font-size: 50px;
+}
+
+.section-heading {
+    font-weight: bold;
+}
+
+.landing-for-projects {
+    font-size: 50px;
+}
+
+.footer-text {
+    text-align: right;
+}
+
+.menu-container {
+    height: 100px;
+    line-height: 100px;
+    font-size: 25px;
+}
