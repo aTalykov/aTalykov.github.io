@@ -9,10 +9,16 @@ a {
     font-family: Helvetica;
 }
 
-.image {
+.header-image {
     height: 1080px;
     background-image: url(../img/driko.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background-image: url(../img/logo.png);
+    background-position: left;
     background-repeat: no-repeat;
 }
 

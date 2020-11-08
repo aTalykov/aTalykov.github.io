@@ -1,0 +1,41 @@
+@import url('reset.css');
+
+.header, .footer {
+    background-color: #FE1A19;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Helvetica;
+    padding: 20px;
+}
+
+.strawberry_tart_recipe {
+    width: 400px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 5px solid #E5E000;
+    border-radius: 30px;
+    margin: 52px 0 52px 70px;
+    padding: 33px;
+    font-size: 20px;
+}
+
+.strawberry_tart_recipe h1 {
+    font-weight: bold;
+    padding-bottom: 41px;
+}
+
+.footer-text {
+    display: inline-block;
+}
+
+.footer-container a {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-decoration: none;
+}
