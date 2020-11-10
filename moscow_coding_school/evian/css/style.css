@@ -1,8 +1,12 @@
 @import url('reset.css');
 
 .header-container {
-    background-color: #ffffff;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
     padding: 50px;
+    position: fixed;
+    background-color: #ffffff;
     color: #E50043;
     font-size: 50px;
     display: flex;
@@ -20,9 +24,12 @@
     margin-left: 25px;
 }
 
+
+
 .hero-block-container {
     display: flex;
     width: 100%;
+    margin-top: 140px;
     height: 950px;
     justify-content: center;
     align-items: center;
