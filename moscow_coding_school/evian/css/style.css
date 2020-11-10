@@ -1,0 +1,115 @@
+@import url('reset.css');
+
+.header-container {
+    background-color: #ffffff;
+    padding: 50px;
+    color: #E50043;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-links>li {
+    display: inline-block;
+
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color: #E50043;
+    margin-left: 25px;
+}
+
+.hero-block-container {
+    display: flex;
+    width: 100%;
+    height: 950px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/evian_origins_logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.evian-hero-text {
+    width: 100%;
+    color: #E50043;
+    font-family: Arial;
+    font-size: 100px;
+}
+
+.evian-water-article {
+    margin: 150px 200px;
+    box-sizing: border-box;
+    border: 3px solid #F8BFC7;
+    border-radius: 20px;
+    padding: 24px;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.evian-water-catalogue {
+    display: flex;
+    justify-content: space-around;
+}
+
+.evian-water-label {
+    margin-top: 48px;
+    font-family: Arial;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.evian-water-description {
+    display: flex;
+    margin: 150px 200px;
+    box-sizing: border-box;
+    border: 3px solid #F8BFC7;
+    border-radius: 20px;
+    padding: 30px 0;
+    justify-content: space-around;
+}
+
+.evian-water-description-image {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.evian-water-description-text {
+    box-sizing: border-box;
+    padding-right: 30px;
+    font-size: 25px;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.footer {
+    background-color: #F8BFC7;
+    font-family: Arial;
+    font-size: 50px;
+    color: white;
+    padding: 50px;
+}
+
+.footer-text {
+    display: inline-block;
+}
+
+.footer-container a {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    color: white;
+    font-size: 50px;
+    font-family: Helvetica;
+    text-decoration: none;
+}
