@@ -28,7 +28,6 @@
 
 .hero-block-container {
     display: flex;
-    width: 100%;
     margin-top: 140px;
     height: 950px;
     justify-content: center;
@@ -47,7 +46,8 @@
 }
 
 .evian-water-article {
-    margin: 150px 200px;
+    margin: 150px auto;
+    width: 1040px;
     box-sizing: border-box;
     border: 3px solid #F8BFC7;
     border-radius: 20px;
@@ -73,7 +73,8 @@
 
 .evian-water-description {
     display: flex;
-    margin: 150px 200px;
+    margin: 150px auto;
+    width: 1040px;
     box-sizing: border-box;
     border: 3px solid #F8BFC7;
     border-radius: 20px;
