@@ -1,5 +1,9 @@
 @import url('reset.css');
 
+html {
+    font-size: 10px;
+}
+
 .header {
     background-color: #FEB700;
 }
@@ -14,7 +18,7 @@
 .header-text {
     text-transform: uppercase;
     font-family: 'Times New Roman';
-    font-size: 50px;
+    font-size: 5rem;
 }
 
 .columns {
@@ -25,7 +29,7 @@
     align-items: stretch;
 }
 
-.column {
+.column-container {
     width: calc((100% - 100px) / 3);
     height: 100%;
     box-sizing: border-box;
@@ -35,32 +39,29 @@
 .column_text {
     padding: 30px 33px;
     font-family: 'Times New Roman';
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .column_text h2 {
     font-weight: bold;
 }
 
-.SSPW_image {
-    background-image: url(../img/SSPW.png);
+.column_image {
     background-size: cover;
     background-position: center;
-    padding-bottom: 100%;
+    padding-bottom: 150%;
+}
+
+.SSPW_image {
+    background-image: url(../img/SSPW.png);
 }
 
 .FYBB_image {
     background-image: url(../img/FYBB.png);
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 100%;
 }
 
 .HEG_image {
     background-image: url(../img/HEG.png);
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 100%;
 }
 
 .footer {
@@ -84,5 +85,5 @@
     padding-right: 30px;
     text-transform: uppercase;
     font-family: 'Times New Roman';
-    font-size: 50px;
+    font-size: 5rem;
 }
