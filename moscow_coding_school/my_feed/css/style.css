@@ -1,0 +1,77 @@
+@import url('reset.css');
+
+html {
+    font-size: 10px;
+}
+
+.header,
+.footer {
+    background-color: #0000FF;
+}
+
+.header-container,
+.footer-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header-text,
+.footer-text {
+    padding-left: 35px;
+    padding-right: 35px;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.content {
+    background-color: #FFFFFF;
+    padding: 21px 22px;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-table {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    margin: 10px;
+    height: 165px;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    border: 5px solid #000000;
+    font-family: Helvetica;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0em;
+}
+
+@media all and (min-width: 375px) {
+    .content {
+        background-color: #FFFFFF;
+        padding: 102px 110px;
+    }
+
+    .main-table {
+        height: 300px;
+        width: calc((100% - 40px) / 2);
+        font-family: Helvetica;
+        font-size: 5rem;
+    }
+}
+
+.footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-container {
+    justify-content: space-between;
+}
