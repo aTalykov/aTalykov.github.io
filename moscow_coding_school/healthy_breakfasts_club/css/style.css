@@ -10,7 +10,7 @@ html {
 
 .header-container {
     display: flex;
-    height: 160px;
+    height: 16rem;
     justify-content: center;
     align-items: center;
 }
@@ -23,21 +23,21 @@ html {
 
 .columns {
     margin: auto;
-    padding: 70px;
+    padding: 7rem;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
 }
 
 .column-container {
-    width: calc((100% - 100px) / 3);
+    width: calc((100% - 10rem) / 3);
     height: 100%;
     box-sizing: border-box;
     border: 1px solid #000000;
 }
 
 .column_text {
-    padding: 30px 33px;
+    padding: 3rem 3.3rem;
     font-family: 'Times New Roman';
     font-size: 2rem;
 }
@@ -75,14 +75,14 @@ html {
 
 .footer-container {
     display: flex;
-    height: 160px;
+    height: 16rem;
     justify-content: space-between;
     align-items: center;
 }
 
 .footer-text {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3rem;
+    padding-right: 3rem;
     text-transform: uppercase;
     font-family: 'Times New Roman';
     font-size: 5rem;
