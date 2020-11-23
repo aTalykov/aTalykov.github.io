@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>boilerplate</title>
+    <meta charset="utf-8">
+    <meta description="Some Title for website">
+    <meta keywords="some, title, for, website">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <nav class="header-navigation">
+                <ul class="site-navigation">
+                    <li><a href="#">ПОСЫЛКИ</a></li>
+                    <li><a href="#">УПАКОВКА</a></li>
+                    <li><a href="#">ПОДПИСКА</a></li>
+                </ul>
+                <ul class="user-navigation">
+                    <li><a href="#">МЕНЮ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content">
+            <div class="delivery-form-container">
+                <form class="delivery-form" action="https://formspree.io/f/mqkgdzor" method="POST" autocomplete="off">
+                    <fieldset class="gift-delivery-information">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" placeholder="Ира">
+                        <label for="city">Город</label>
+                        <input type="text" name="city" placeholder="Сочи">
+                        <label for="gift">Подарок</label>
+                        <input type="text" name="gift" placeholder="Книга в твёрдом переплёте">
+                        <label for="e-mail">Электронная почта</label>
+                        <input type="text" name="e-mail" placeholder="daykiller@gmail.com">
+                    </fieldset>
+                    <input type="submit">
+                </form>
+            </div>
+            <h3 class="delivery-message">ВАША ПОСЫЛКА УЖЕ В ПУТИ!</h3>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <h1 class="footer-text">СЕКРЕТНЫЕ ПОСЫЛКИ ДЛЯ ДРУЗЕЙ</h1>
+                <p class="footer-text"><a href="../personal_portfolio/index.html">НАЗАД</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
