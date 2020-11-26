@@ -1,11 +1,26 @@
-@import url('reset.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --main-color: #FEB700;
+}
 
 html {
     font-size: 10px;
 }
 
 .header {
-    background-color: #FEB700;
+    background-color: var(--main-color);
 }
 
 .header-container {

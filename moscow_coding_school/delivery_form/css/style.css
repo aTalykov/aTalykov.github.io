@@ -1,4 +1,19 @@
-@import url('reset.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --main-color: #F8BFC7;
+}
 
 html {
     font-size: 10px;
@@ -9,7 +24,7 @@ a {
 }
 
 .header, .footer {
-    background-color: #F8BFC7;
+    background-color: var(--main-color);
     font-size: 2rem;
     line-height: 2.3rem;
     font-family: Helvetica;
@@ -21,7 +36,11 @@ a {
     color: #000000;
 }
 
-.header-navigation {
+.footer, .footer a {
+    color: #FFFFFF;
+}
+
+.header-navigation, .footer-container {
     display: flex;
     height: 9rem;
     padding-left: 50px;
@@ -38,6 +57,7 @@ a {
 
 main {
     background-color: #336fd1;
+    min-height: calc(100vh - 18rem);
 }
 
 .delivery-form-container {
@@ -53,7 +73,7 @@ main {
 }
 
 .gift-delivery-information {
-    background: #F8BFC7;
+    background: var(--main-color);
     border: 3px solid #FFFFFF;
     color: #FFFFFF;
     width: 30rem;
@@ -62,16 +82,12 @@ main {
     border-radius: 20px;
     font-family: Helvetica;
     font-weight: bold;
-    text-align: left;
     font-size: 2rem;
     line-height: 2.3rem;
-    letter-spacing: 0rem;
 }
 
 .gift-delivery-information input {
-    display: block;
-    background: #F8BFC7;
-    box-sizing: border-box;
+    background: var(--main-color);
     border: 0;
     border-bottom: 1px solid  #FFFFFF;
     color: #FFFFFF;
@@ -79,10 +95,7 @@ main {
     margin-bottom: 1.6rem;
     font-family: 'Times New Roman';
     font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
+    font-size: 2rem;
 }
 
 .gift-delivery-information > input:last-child {
@@ -95,7 +108,6 @@ main {
 
 input[type="submit"] {
     background-color: #FEB700;
-    color: #FFFFFF;
     display: block;
     margin: auto;
     margin-top: 1rem;
@@ -103,13 +115,8 @@ input[type="submit"] {
     padding-bottom: 1.7rem;
     width: 20rem;
     line-height: 2rem;
-    border: 3px solid #FFFFFF;
     text-transform: uppercase;
-    box-sizing: border-box;
     border-radius: 3rem;
-    font-family: Helvetica;
-    font-size: 2rem;
-    font-weight: bold;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -126,19 +133,4 @@ input:focus, textarea:focus, select:focus {
     line-height: 5.8rem;
     letter-spacing: 0em;
     text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    height: 9rem;
-    padding-left: 50px;
-    padding-right: 50px;
-    color: #FFFFFF;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-}
-
-.footer a {
-    color: #FFFFFF;
 }

@@ -1,4 +1,19 @@
-@import url('reset.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --main-color: #0000FF;
+}
 
 html {
     font-size: 10px;
@@ -6,12 +21,12 @@ html {
 
 .header,
 .footer {
-    background-color: #0000FF;
+    background-color: var(--main-color);
 }
 
 .header-container,
 .footer-container {
-    height: 100px;
+    height: 10rem;
     display: flex;
     align-items: center;
 }
@@ -26,12 +41,10 @@ html {
     font-family: Helvetica;
 }
 
-.content {
-    background-color: #FFFFFF;
-    padding: 21px 22px;
-}
-
 .content-container {
+    min-width: fit-content;
+    min-height: calc(100vh - 20rem);
+    background-color: #FFFFFF;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -39,12 +52,14 @@ html {
 
 .main-table {
     display: flex;
+    flex-shrink: 0;
+    flex-basis: content;
     justify-content: center;
     align-items: center; 
     text-align: center;
-    margin: 10px;
-    height: 165px;
-    width: calc(100% - 40px);
+    margin: 2rem;
+    height: 16.5rem;
+    width: 33rem;
     box-sizing: border-box;
     border: 5px solid #000000;
     font-family: Helvetica;
@@ -53,15 +68,18 @@ html {
     letter-spacing: 0em;
 }
 
-@media all and (min-width: 375px) {
-    .content {
-        background-color: #FFFFFF;
-        padding: 102px 110px;
+@media screen and (min-width: 600px) {
+
+    .content-container {
+        margin: auto;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
     }
 
     .main-table {
-        height: 300px;
-        width: calc((100% - 40px) / 2);
+        margin: 1rem;
+        width: 60rem;
+        height: 30rem;
         font-family: Helvetica;
         font-size: 5rem;
     }
