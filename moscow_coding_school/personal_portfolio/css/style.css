@@ -62,7 +62,7 @@ a {
 }
 
 .menu-container {
-    height: 100px;
+    height: fit-content;
     line-height: 100px;
     font-size: 25px;
 }
