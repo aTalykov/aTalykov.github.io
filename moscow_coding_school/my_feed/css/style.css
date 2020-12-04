@@ -58,9 +58,9 @@ html {
 .main-table {
     display: flex;
     margin: 2rem;
-    width: 33rem;
+    width: 80vw;
+    height: 40vw;
     border: 5px solid #000000;
-    height: 16.5rem;
     justify-content: center;
     align-items: center; 
     text-align: center;
@@ -79,8 +79,8 @@ html {
     }
 
     .main-table {
-        width: 60rem;
-        height: 30rem;
+        width: 40vw;
+        height: 20vw;
         margin: 1rem;
         font-size: 5rem;
     }
