@@ -1,11 +1,11 @@
-const Body = document.body;
-Body.style.backgroundColor = "#696969";
+const body = document.body;
+body.style.backgroundColor = "#696969";
 
-const Page = document.querySelector('.page');
-Page.style['color'] = 'ghostwhite';
+const page = document.querySelector('.page');
+page.style['color'] = 'ghostwhite';
 
-const Name = document.querySelector('.name');
-Name.innerHTML = "DJ Rashad";
+const name = document.querySelector('.name');
+name.innerHTML = "DJ Rashad";
 
 const image = document.querySelector('img');
 image.setAttribute('src', 'https://www.rokolectiv.ro/archive/2012/content/6.Day4/0.DJRashad/rashad.jpg')
