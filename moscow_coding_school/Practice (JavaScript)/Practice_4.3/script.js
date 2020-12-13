@@ -8,13 +8,13 @@ let player = parseInt(prompt('Your choice: 0 - rock, 1 - scissors, 2 - paper'));
 let computer = Math.floor(Math.random() * 3);
 
 // опишем все условия и будем выводить в консоль 'computer win' или 'player win'
-if (player == rock && computer == rock || player == scissors && computer == scissors || player == paper && computer == paper) {
+if (player === rock && computer === rock || player === scissors && computer === scissors || player === paper && computer === paper) {
     console.log('Ничья');
-} else if (player == rock && computer == scissors || player == scissors && computer == paper || player == paper && computer == rock) {
+} else if (player === rock && computer === scissors || player === scissors && computer === paper || player === paper && computer === rock) {
     console.log('Победил игрок');
-} else if (player == rock && computer == paper || player == paper && computer == scissors || player == scissors && computer == rock) {
+} else if (player === rock && computer === paper || player === paper && computer === scissors || player === scissors && computer === rock) {
     console.log('Победил компьютер');
-} else console.log('Введено неверное значение в поле');
+} else {console.log('Введено неверное значение в поле')};
 
 console.log(player)
 console.log(computer)
