@@ -1,5 +1,4 @@
-let modelNumber = prompt('Введите число');
-modelNumber = parseInt(modelNumber);
+let modelNumber = parseInt(prompt('Введите число'));
 
 if (modelNumber >= 0) {
 console.log(modelNumber);

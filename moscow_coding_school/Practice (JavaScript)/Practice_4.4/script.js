@@ -1,4 +1,3 @@
-let modelNumber = prompt('Введите число');
-modelNumber = parseInt(modelNumber);
+let modelNumber = parseInt(prompt('Введите число'));
 
-(modelNumber >= 0) ? (console.log(modelNumber)) : ((modelNumber < 0) ? (console.log(modelNumber * -1)) : (alert ('Ошибка. Введите число')));
+(modelNumber >= 0) ? (console.log(modelNumber)) : (console.log(modelNumber * -1));
