@@ -14,7 +14,7 @@ class Person {
     }
     isSunny() {
         const APIKey = '099715979800997fed902c8c415868c1';
-        const url = 'http://api.openweathermap.org/data/2.5/weather?q=Moscow&appid='+APIKey;
+        const url = 'https://api.openweathermap.org/data/2.5/weather?q=Moscow&appid='+APIKey;
 
         let xhr = new XMLHttpRequest();
         xhr.open('GET', url, false);
