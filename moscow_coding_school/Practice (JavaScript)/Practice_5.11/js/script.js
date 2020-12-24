@@ -1,3 +1,5 @@
+"use strict";
+
 let newSchool = [
     [
         ['Lil Yachty', 'Playboi Carti', 'Lil Uzi Vert'],
@@ -9,14 +11,14 @@ let newSchool = [
     ]
 ]
 
-for (arrayByCountry of newSchool) {
-    for (arrayOfRappers of arrayByCountry[0]) {
+for (let arrayByCountry of newSchool) {
+    for (let arrayOfRappers of arrayByCountry[0]) {
         console.log(arrayOfRappers);
     };
 }
 
-for (arrayByCountry of newSchool) {
-    for (arrayOfRapProducers of arrayByCountry[1]) {
+for (let arrayByCountry of newSchool) {
+    for (let arrayOfRapProducers of arrayByCountry[1]) {
         console.log(arrayOfRapProducers);
     };
 }

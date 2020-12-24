@@ -24,7 +24,7 @@ for (let i = 0; i < cryptoName.length && i < exchangeRate.length; i++) {
 
 for (let i = 0; i < colorBar.length; i++) {
     colorBar[i].style.height = "1rem";
-    colorBar[i].style.width = 20+(crypto[i].price / 100) + 'rem';
+    colorBar[i].style.width = 10+(crypto[i].price / 100) + '%';
 }
 
 colorBar[0].style.backgroundColor = 'red';

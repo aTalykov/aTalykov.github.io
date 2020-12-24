@@ -6,10 +6,9 @@ const cityWindSpeed = document.querySelector('.cityWindSpeed');
 
 form.onsubmit = function (e) {
     e.preventDefault();
-    const city = form.elements.city.value;
-    inputtedCity.innerHTML = city;
+    inputtedCity.innerHTML = form.elements.city.value;
 
-    const url = 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+APIKey;
+    const url = 'http://api.openweathermap.org/data/2.5/weather?q='+form.elements.city.value+'&appid='+APIKey;
 
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url, false);
