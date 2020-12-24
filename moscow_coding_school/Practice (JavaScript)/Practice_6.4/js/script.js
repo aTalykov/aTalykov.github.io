@@ -8,7 +8,7 @@ form.onsubmit = function (e) {
     e.preventDefault();
     inputtedCity.innerHTML = form.elements.city.value;
 
-    const url = 'http://api.openweathermap.org/data/2.5/weather?q='+form.elements.city.value+'&appid='+APIKey;
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q='+form.elements.city.value+'&appid='+APIKey;
 
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url, false);
