@@ -3,13 +3,7 @@ class Person {
         this.name = name;
         this.happiness = 0;
     }
-    hasCat() {
-        return this.happiness += 1;
-    }
-    hasRest() {
-        return this.happiness += 1;
-    }
-    hasMoney() {
+    happinessIncrement() {
         return this.happiness += 1;
     }
     isSunny() {
@@ -37,9 +31,9 @@ form.onsubmit = function (e) {
     let rest = form.elements.rest.value;
     let money = form.elements.money.value;
     const person = new Person(name);
-    (cat === 'yes') ? person.hasCat() : 0;
-    (rest === 'yes') ? person.hasCat() : 0;
-    (money === 'yes') ? person.hasCat() : 0;
+    (cat === 'yes') ? person.happinessIncrement() : 0;
+    (rest === 'yes') ? person.happinessIncrement() : 0;
+    (money === 'yes') ? person.happinessIncrement() : 0;
     person.isSunny();
     document.querySelector('.personName').innerHTML = name + ':';
     if (person.happiness === 4) {
