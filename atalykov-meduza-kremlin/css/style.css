@@ -1,0 +1,265 @@
+@import url(normalize.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+:root {
+    --main-color: #A37846;
+    --main-background-color: #000000;
+    --main-section-color: #ffffff;
+}
+
+html {
+    font-size: 10px;
+    background-color: var(--main-background-color);
+}
+
+.header, .footer {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+/* Верхняя часть */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 6rem 0 6rem;
+}
+
+.main-navigation {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.main-navigation > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.main-navigation > a:hover {
+    color: var(--main-color);
+}
+
+.main-navigation > a:not(:last-child) {
+    padding-right: 3rem;
+}
+
+.site-navigation {
+    display: flex;
+}
+
+.site-navigation > a {
+    text-decoration: none;
+    box-sizing: content-box;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.navigation-separate {
+    border: 1px solid #FFFFFF;
+}
+
+.site-search {
+    border: 0;
+    background-color: transparent;
+    margin-left: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+/* Info-Bar */
+
+.info-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 6rem 1.5rem 6rem;
+    border-radius: 10px;
+    background-color: var(--main-section-color);
+    padding: 1.6rem 1.6rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+}
+
+.currency-symbol {
+    color: #808080;
+}
+
+.info-bar-switcher-label {
+    color: #9CA1A9;
+    text-transform: uppercase;
+    display: flex;
+    cursor: pointer;
+}
+
+.info-bar-switcher {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.animated-checker {
+    padding-left: 2px;
+    width: 4.8rem;
+    height: 2.4rem;
+    margin-left: 1rem;
+    background: #E6E6E6;
+    border-radius: 25px;
+}
+
+.animated-checker-ball {
+    position: relative;
+    top: 2px;
+    border-radius: 90px;
+    width: 2rem;
+    height: 2rem;
+    background: #ffffff;
+}
+
+#checker:checked ~ .animated-checker  {
+    background: var(--main-color);
+    padding-left: 26px;
+    transition-duration: 0.8s;
+    transition-property: all;
+}
+
+/* Главная секция новостей */
+
+.news-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    margin: 1.5rem 6rem 0 6rem;
+    padding: 6rem;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.latest-news-section {
+    background-color: var(--main-section-color);
+}
+
+.latest-news-section:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.front-headline-section {
+    display: flex;
+    height: 25rem;
+    text-align: center;
+    border: 5px solid var(--main-color);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+.headline-front-news {
+    width: 100%;
+    font-size: 5rem;
+}
+
+.secondary-news-block {
+    display: flex;
+    border: 1px solid #9CA1A9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 0.5rem 3rem;
+}
+
+.lead-block-article {
+    width: 50%;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.lead-block-article > h3 {
+    font-size: 3.5rem;
+}
+
+.news-article-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.article-in-row {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    width: 50%;
+}
+
+.article-in-row:nth-child(odd) {
+    padding-right: 5rem;
+}
+
+.article-in-row > h3 {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.news-article {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.news-article h3 {
+    font-family: serif;
+}
+
+.news-time-caption {
+    color: #9CA1A9;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Нижняя часть */
+
+.footer-navigation-link {
+    height: 36rem;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 5rem 20rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.footer-link-container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.footer-link-group-name {
+    text-transform: uppercase;
+    padding-bottom: 2.4rem;
+}
+
+.footer-link-group {
+    margin-bottom: 3.4rem;
+    text-transform: capitalize;
+}
+
+.footer-copyright {
+    padding: 3.8rem 23.5rem;
+}
