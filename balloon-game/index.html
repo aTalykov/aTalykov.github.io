@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #game {
+            border: 1px solid black;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        canvas {
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+        <div class="border border-solid border-black max-w-md w-full p-6 text-center">
+            <h1 class="text-4xl font-bold" id="scoreEl">0</h1>
+            <p class="text-sm text-gray-700 mb-4">Score</p>
+            <div>
+                <button class="bg-blue-500 text-white font-bold w-full py-3 rounded-full" onclick="startGame()">Начать
+                    игру</button>
+            </div>
+        </div>
+    </div>
+    <canvas id="game" width="360" height="640">
+    </canvas>
+</body>
+<script src="./script.js"></script>
+
+</html>
